@@ -75,7 +75,14 @@ export const qTurn = (socket) => (token, finalPoint) => {
 
 export const qFinish = (socket) => (token, chests, enemies) => {
    // if (token !== null)
-        DB.UpdateDBByToken(token, chests, enemies);
+    for (let room of roomsInfoMap) {
+        if (room[1].get("players").get(token) !== undefined) {
+//            socket.to(room[0].toString()).emit('turn', token, finalPoint);
+            roomsInfoMap.delete(room[0].toString());
+            return;
+        }
+    }
+    DB.UpdateDBByToken(token, chests, enemies);
 }
 
 export const qDisconnect = (socket) => (token) => {
