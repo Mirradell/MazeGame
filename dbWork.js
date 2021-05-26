@@ -127,7 +127,7 @@ export function UpdateDBByToken(token, chests, enemies){
         if (err) {
             console.log(err);
         }
-       // if (row !== undefined)
+        if (row !== undefined)
             db.run(`UPDATE statistics 
                 SET played_times = ${row.played_times + 1},
                     collected_chests = ${row.collected_chests + chests},
