@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="css/style.css"/>
     <script >
         const script = document.createElement('script');
-        script.src = `http://aqueous-beyond-75756.herokuapp.com:5000/socket.io/socket.io.js`
+        script.src = `http://aqueous-beyond-75756.herokuapp.com:${port}/socket.io/socket.io.js`
         document.querySelector('head').appendChild(script);
     </script>
+    <script src="/socket.io/socket.io.js"></script>
 </head>
 
 <body>

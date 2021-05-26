@@ -3,7 +3,7 @@ import * as QA from './QuestionsAnswers.js';
 const http = require('http');
 const express = require('express');
 const socketIO  = require('socket.io');
-const port = process.env.PORT || 5000;
+export const port = process.env.PORT || 5000;
 const app = express();
 app.use(express.static(`${__dirname}/client`));
 
