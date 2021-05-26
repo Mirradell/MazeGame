@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Server page</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="mainClass">
+        <div class="timer" id="timerText">
+            <div style="padding-right: 5px" hidden="hidden">Осталось времени:</div>
+            <div id="timer" hidden="hidden"></div>
+        </div>
+
+        <div id="money" class="text"></div>
+        <div id="games" class="text"></div>
+        <div id="enemy" class="text"></div>
+
+        <button id="startBtn" class="startBtn">Начать игру</button>
+        <img class="loadingBtn" src="images/loading.gif" id="loading" hidden="hidden"/>
+        <div id="tips" class="text"></div>
+
+        <canvas id="mazeCanvas" class="maze" hidden="hidden"></canvas>
+    </div>
+
+    <script src="src/testScript.js"></script>
+    <script src="src/maze.js"></script>
+    <script src="src/player.js"></script>
+</body>
+</html>

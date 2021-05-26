@@ -1,0 +1,48 @@
+.startBtn {
+    background-color: cornsilk;
+    border-color: coral;
+    border-width: 5px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.maze {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.loadingBtn {
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.mainClass {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 1300px;
+    height: 700px;
+}
+
+.text {
+    margin: 5px 0;
+    font-size: 20px;
+    font-style: italic;
+}
