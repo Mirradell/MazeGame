@@ -22,6 +22,6 @@ server.on('error', (error) => {
     console.error(error);
 });
 
-server.listen(8080, () => {
+server.listen(80, () => {
    console.log('server is listening...');
 });
